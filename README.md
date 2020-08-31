@@ -7,3 +7,8 @@ Install [jira-dark-gray.user.css](https://raw.githubusercontent.com/aalvarado/ji
 # Preview
 
 ![Preview of Jira Dark Gray](./jira-darks-preview.png)
+
+# Installation
+Please follow Github-Dark installation instructions
+
+https://github.com/StylishThemes/GitHub-Dark
