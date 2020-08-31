@@ -1,8 +1,7 @@
 # Jira Dark Gray
 Userstyle for Jira Dark Gray
 
-Install [jira-dark-gray.user.css](https://raw.githubusercontent.com/aalvarado/jira-dark-gray/master/jira-dark-gray.user.css)
-
+[![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg)](https://raw.githubusercontent.com/aalvarado/jira-dark-gray/master/jira-dark-gray.user.css)
 
 # Preview
 
