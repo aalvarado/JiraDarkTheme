@@ -106,9 +106,10 @@ section div[data-test-id="platform-board-kit.common.ui.column-header.header.colu
 }
 
 [data-test-id="issue.views.issue-details.issue-layout.left-most-column"],
-#jira-issue-header,
 [data-test-id="issue.views.issue-details.issue-layout.right-most-column"],
-.sc-hMapFE.hDMqWg
+.sc-hMapFE.hDMqWg,
+.css-4rxc6l,
+#jira-issue-header
 {
   background-color: #222;
 }
