@@ -6,131 +6,149 @@
 @preprocessor default
 
 ==/UserStyle== */
+@-moz-document regexp(".*.atlassian.net/jira.*"),
+regexp(".*.atlassian.net/browse.*") {
+  header[role="banner"],
+  [data-testid="Content"] {
+    background-color: #333;
+  }
 
-@-moz-document regexp(".*.atlassian.net/jira.*"), regexp(".*.atlassian.net/browse.*") {
-header[role="banner"],
-[data-testid="Content"]
-{
-    background-color: #333 ;
-}
+  header a span {
+    color: #8ec4fd;
+  }
 
-header a span {
-  color: #8ec4fd;
-}
+  h1,
+  h1 *,
+  h2,
+  h2 *,
+  h3,
+  h3 *,
+  h4,
+  h4 *,
+  h5,
+  h5 *,
+  h6,
+  h6 * {
+    color: #8ec4fd !important;
+  }
 
-h1, h1 *,
-h2, h2 *,
-h3, h3 *,
-h4, h4 *,
-h5, h5 *, 
-h6, h6 * {
-  color: #8ec4fd !important;
-}
+  svg {
+    color: #8ec4fd;
+  }
 
-svg {
-  color: #8ec4fd;
-}
+  span[role="presentation"] {
+    fill: #8ec4fd;
+  }
 
-span[role="presentation"] {
-  fill:  #8ec4fd;
-}
+  header button span {
+    color: #8ec4fd;
+  }
 
-header button span {
-  color: #8ec4fd;
-}
+  [data-testid="atlassian-navigation--primary-actions"]:after {
+    background: none;
+  }
 
-[data-testid="atlassian-navigation--primary-actions"]:after {
-  background: none;
-}
+  [data-test-id="software-board.board"] {
+    background-color: #333;
+    color: #ddd;
+  }
 
-[data-test-id="software-board.board"] {
-  background-color: #333;
-  color: #ddd;
-}
+  [data-testid="ContextualNavigation"] div:first-child {
+    background-color: #333;
+    color: #8ec4fd;
+  }
 
-[data-testid="ContextualNavigation"] div:first-child {
-  background-color: #333;
-  color: #8ec4fd;
-}
+  [role="presentation"] [data-testid="NavigationItem"] {
+    background-color: #333;
+  }
 
-[role="presentation"] [data-testid="NavigationItem"] {
-  background-color: #333;
-}
+  [data-test-id="software-board.board-area"] section div {
+    background-color: #333;
+  }
 
-[data-test-id="software-board.board-area"] section div {
-  background-color: #333;
-}
+  section div[data-rbd-droppable-context-id] {
+    background-color: #222;
+  }
 
-section div[data-rbd-droppable-context-id]{
-  background-color: #222;
-}
+  [data-test-id="software-board.board-area"] section span {
+    color: #ccc;
+  }
+  section div[data-test-id="platform-board-kit.common.ui.column-header.header.column-header-container"] div {
+    background-color: #222;
+  }
 
-[data-test-id="software-board.board-area"] section span {
-  color: #ccc;
-}
-section div[data-test-id="platform-board-kit.common.ui.column-header.header.column-header-container"] div {
-  background-color: #222;
-}
+  [role="dialog"] {
+    background-color: #333;
+    color: #ccc;
+  }
 
-[role="dialog"] {
-  background-color: #333;
-  color: #ccc;
-}
+  [role="presentation"] a {
+    color: #8ec4fd;
+  }
 
-[role="presentation"] a{
-  color: #8ec4fd;
-}
+  [role="presentation"] p {
+    color: #ccc;
+  }
 
-[role="presentation"] p {
- color: #ccc; 
-}
+  .llCsQv:hover {
+    background-color: #222;
+  }
 
-.llCsQv:hover {
-  background-color: #222;
-}
+  [data-rbd-draggable-context-id] {
+    background-color: #444;
+  }
 
-[data-rbd-draggable-context-id] {
-  background-color: #444;
-}
+  .dKslwV {
+    background-color: #333;
+  }
 
-.dKslwV {
-  background-color: #333;
-}
+  .hQVuBn {
+    background-color: #444;
+  }
 
-.hQVuBn {
-  background-color: #444;
-}
+  .jODjkq,
+  .ak-editor-content-area {
+    background-color: #111;
+  }
 
-.jODjkq, .ak-editor-content-area {
-  background-color: #111;
-}
+  [data-test-id="issue.views.issue-details.issue-layout.left-most-column"],
+  [data-test-id="issue.views.issue-details.issue-layout.right-most-column"],
+  .sc-hMapFE.hDMqWg,
+  .css-4rxc6l,
+  #jira-issue-header {
+    background-color: #222;
+  }
 
-[data-test-id="issue.views.issue-details.issue-layout.left-most-column"],
-[data-test-id="issue.views.issue-details.issue-layout.right-most-column"],
-.sc-hMapFE.hDMqWg,
-.css-4rxc6l,
-#jira-issue-header
-{
-  background-color: #222;
-}
+  [data-test-id="profilecard-next.ui.profilecard.profilecard-trigger"] div {
+    color: #aaa;
+  }
 
-[data-test-id="profilecard-next.ui.profilecard.profilecard-trigger"] div {
-  color: #aaa;
-}
+  ::marker {
+    color: #ccc !important;
+  }
 
-::marker {
-  color: #ccc !important;
-}
+  .hKALUX {
+    background-color: transparent;
+  }
 
-.hKALUX {
-  background-color: transparent;
-}
+  .sc-hmyDHa.jzBjCe,
+  [id="jira-issue-header-actions"] {
+    background-color: #111;
+    padding: 0px 12px;
+    border-radius: 5px;
+  }
 
-.sc-hmyDHa.jzBjCe,
-[id="jira-issue-header-actions"]
-{
-  background-color: #111;
-  padding: 0px 12px;
-  border-radius: 5px;
-}
+  .cMnRzP {
+    background-color: #111;
+    padding: 20px;
+  }
+
+  .NmDvw,
+  .kRWZQB {
+    background-color: #222;
+  }
+
+  .kRWZQB {
+    border: 1px solid #333;
+  }
 }
