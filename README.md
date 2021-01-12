@@ -1,5 +1,5 @@
 # Jira Dark Theme
-Userstyle for Jira Dark Theme
+Jira Dark Theme Userstyle
 
 [![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg)](https://raw.githubusercontent.com/aalvarado/jira-dark-gray/master/jira-dark-gray.user.css)
 
