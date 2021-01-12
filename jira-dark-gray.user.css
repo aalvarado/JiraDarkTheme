@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         Jira Dark Gray
 @namespace    github.com/aalvarado
-@version      1.1.0
+@version      1.2.0
 @license      BSD
 @preprocessor default
 
@@ -10,8 +10,9 @@
 regexp(".*.atlassian.net/browse.*"),
 regexp(".*.atlassian.net/secure.*") {
     header[role="banner"],
-    [data-testid="Content"] {
-        background-color: #333;
+    [data-testid="Content"],
+    html, body{
+        background-color: #333 !important;
     }
 
     header a span {
@@ -122,7 +123,10 @@ regexp(".*.atlassian.net/secure.*") {
         background-color: #222;
     }
 
-    [role="dialog"] {
+    [role="dialog"],
+    .ghx-issue-compact,
+    .ghx-issue-compact .ghx-end
+    {
         background-color: #333;
         color: #ccc;
     }
@@ -195,7 +199,12 @@ regexp(".*.atlassian.net/secure.*") {
         background-color: #333;
     }
 
-    [data-test-id="issue.activity.comment"] input {
+    [data-test-id="issue.activity.comment"] input,
+    #create-issue-dialog .jira-dialog-heading, #edit-issue-dialog .jira-dialog-heading,
+    .jira-dialog .jira-dialog-content,
+    #create-issue-dialog .form-body, #create-issue-dialog .form-footer, #edit-issue-dialog .form-body, #edit-issue-dialog .form-footer,
+    .ghx-backlog-container
+    {
         background-color: #222;
         color: #ccc;
     }
@@ -229,5 +238,38 @@ regexp(".*.atlassian.net/secure.*") {
         background-color: #444;
         padding: 10px;
         box-shadow: -3px 3px 1px #00000850;
+    }
+    .jira-dialog-heading {
+        width: auto;
+    }
+    .jira-dialog-content {
+        border-top: 10px solid #333;
+    }
+    
+    .adg3 .js-issue.ghx-issue-compact:hover, .adg3 .js-issue.ghx-issue-compact:hover .ghx-items-container {
+        background-color: #444;
+    }
+    
+    form.aui input[type="text"],
+    form.aui .multi-select, form.aui .password, form.aui .select, form.aui .text, form.aui .textarea, form.aui .upfile
+    {
+        background-color: #171717;
+        color: #ccc;
+    }
+    
+    form.aui input[type="text"]:hover,
+    form.aui .multi-select:hover, form.aui .password:hover, form.aui .select:hover, form.aui .text:hover, form.aui .textarea:hover, form.aui .upfile:hover,
+    form.aui .multi-select:focus, form.aui .password:focus, form.aui .select:focus, form.aui .text:focus, form.aui .textarea:focus, form.aui .upfile:focus
+    {
+        background-color: #111;
+        color: #ccc;
+    }
+    
+    form.aui .field-group div.checkbox label, form.aui .field-group div.radio label, form.aui fieldset.group div.checkbox label, form.aui fieldset.group div.radio label {
+        color: #8ec4fd;
+    }
+    
+    .adg3 .ghx-issue-compact.ghx-flagged, .adg3 .ghx-issue.ghx-flagged {
+        background-color: #2d2c1e;
     }
 }
