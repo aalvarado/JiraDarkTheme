@@ -19,6 +19,11 @@ regexp(".*.atlassian.net/secure.*") {
         color: #8ec4fd;
     }
 
+    /* translucent background when story is open in modal */
+    .igoDWs {
+        background-color: rgba(50, 70, 70, 0.64);
+    }
+
     h1,
     h1 *,
     h2,
@@ -242,7 +247,7 @@ regexp(".*.atlassian.net/secure.*") {
     nav button + a {
         margin-top: 10px;
     }
-    
+
     [data-placement="bottom-start"] {
         background-color: #444;
         padding: 10px;
@@ -261,23 +266,33 @@ regexp(".*.atlassian.net/secure.*") {
 
 
     /* "Active Sprints" header row buttons */
-    .sc-kAZVpg > button, /* quick filters main toggle */
-    .sc-fiamaJ > button, /* quick filter individual options */
+    #ghx-quick-filters > ul > li > button, /* quick filters main toggle */
     .complete-sprint-container > button, /* "complete sprint" btn */
     .ghx-view-section > button {  /* "..." board menu */
         background-color: #444;
     }
-    .sc-kAZVpg > button:hover,
-    .sc-fiamaJ > button:hover,
+    #ghx-quick-filters > ul > li > button:hover,
     .complete-sprint-container > button:hover,
     .ghx-view-section > button:hover {
         background-color: #555;
     }
-    .sc-kAZVpg > button span,
-    .sc-fiamaJ > button span,
+    #ghx-quick-filters > ul > li > button span,
+    #ghx-quick-filters > ul > li > button,
     .complete-sprint-container > button,
     .ghx-view-section > button span {
         color: #8ec4fd !important;
+    }
+    #ghx-quick-filters > ul:first-child > li:first-child {
+        padding-right: 0;
+    }
+    #ghx-quick-filters > ul:first-child > li:last-child {
+        margin-top: 0 !important;
+    }
+    #ghx-quick-filters > ul:first-child > li:last-child::before{
+        content: unset;
+    }
+    #ghx-quick-filters > ul > li button {
+        padding: 0 10px;
     }
 
     form.aui input[type="text"],
@@ -302,4 +317,54 @@ regexp(".*.atlassian.net/secure.*") {
     .adg3 .ghx-issue-compact.ghx-flagged, .adg3 .ghx-issue.ghx-flagged {
         background-color: #2d2c1e;
     }
+    
+    
+    /* Issue - right hand column */
+    #jira-issue-header-actions {
+        background: transparent;
+    }
+    div[data-test-id="issue.views.issue-base.context.status-and-approvals-wrapper.status-and-approval"] div[data-test-id="issue.views.issue-base.foundation.status.status-field-wrapper"] button {
+        background-color: #333 !important;
+    }
+    div[data-test-id="issue.views.issue-base.context.status-and-approvals-wrapper.status-and-approval"] div[data-test-id="issue.views.issue-base.foundation.status.status-field-wrapper"] button span {
+        color: #8ec4fd;;
+    }
+    div[data-test-id="issue.views.issue-base.context.status-and-approvals-wrapper.status-and-approval"] div[data-test-id="issue.views.issue-base.foundation.status.status-field-wrapper"] button:hover {
+        background-color: #444 !important;
+    }
+
+    
+    /* Linked Issues */
+    div[data-test-id="issue.views.issue-details.issue-layout.left-most-column"] div > ul {
+        background-color: #222;
+    }
+    div[data-test-id="issue.views.issue-details.issue-layout.left-most-column"] div > ul > div {
+        background-color: #333;
+        border-radius: 3px;
+    }
+    
+    /*** Activity ***/
+    /* Nav buttons (show) */
+    div[data-test-id="issue.views.issue-details.issue-layout.left-most-column"] > div > div > div > button {
+        background-color: #333;
+        border-radius: 3px 3px 0 0;
+
+    }
+    /* button:hover */
+    div[data-test-id="issue.views.issue-details.issue-layout.left-most-column"] > div > div > div > button.css-jhagr1 {
+        background-color: #555;
+    }
+    div[data-test-id="issue.views.issue-details.issue-layout.left-most-column"] > div > div > div > button.css-jhagr1 span {
+        color: #FFF;
+    }
+    /* Comments */
+    div[data-test-id="issue.views.issue-details.issue-layout.left-most-column"] > span > span > div,
+    div[data-test-id="issue.views.issue-details.issue-layout.left-most-column"] > span > span > div > div {
+        background-color: #333;
+        padding: 10px 5px;
+        border-radius: 3px;
+    }
+    
+    
+    
 }
