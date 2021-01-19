@@ -88,17 +88,21 @@ regexp(".*.atlassian.net/secure.*") {
         color: #ddd;
     }
 
+    /* Swimlane columns */
     .adg3 .ghx-column-headers .ghx-column,
     .adg3 .ghx-columns .ghx-column {
         background-color: #222;
     }
 
 
-    /* removes top white border */
+    /***
+     * Left-hand Nav
+    ***/
+    /* remove top white border */
     .css-ac0tta::before, .css-77arw9::before {
         background: #333 !important;
     }
-    
+
     [data-testid="ContextualNavigation"] div:first-child {
         background-color: #333;
         color: #8ec4fd;
@@ -208,6 +212,11 @@ regexp(".*.atlassian.net/secure.*") {
         background-color: #222;
         color: #ccc;
     }
+
+    nav > div::after {
+        background: #333 !important;
+    }
+
     nav a,
     nav a div,
     nav button,
@@ -245,18 +254,39 @@ regexp(".*.atlassian.net/secure.*") {
     .jira-dialog-content {
         border-top: 10px solid #333;
     }
-    
+
     .adg3 .js-issue.ghx-issue-compact:hover, .adg3 .js-issue.ghx-issue-compact:hover .ghx-items-container {
         background-color: #444;
     }
-    
+
+
+    /* "Active Sprints" header row buttons */
+    .sc-kAZVpg > button, /* quick filters main toggle */
+    .sc-fiamaJ > button, /* quick filter individual options */
+    .complete-sprint-container > button, /* "complete sprint" btn */
+    .ghx-view-section > button {  /* "..." board menu */
+        background-color: #444;
+    }
+    .sc-kAZVpg > button:hover,
+    .sc-fiamaJ > button:hover,
+    .complete-sprint-container > button:hover,
+    .ghx-view-section > button:hover {
+        background-color: #555;
+    }
+    .sc-kAZVpg > button span,
+    .sc-fiamaJ > button span,
+    .complete-sprint-container > button,
+    .ghx-view-section > button span {
+        color: #8ec4fd !important;
+    }
+
     form.aui input[type="text"],
     form.aui .multi-select, form.aui .password, form.aui .select, form.aui .text, form.aui .textarea, form.aui .upfile
     {
         background-color: #171717;
         color: #ccc;
     }
-    
+
     form.aui input[type="text"]:hover,
     form.aui .multi-select:hover, form.aui .password:hover, form.aui .select:hover, form.aui .text:hover, form.aui .textarea:hover, form.aui .upfile:hover,
     form.aui .multi-select:focus, form.aui .password:focus, form.aui .select:focus, form.aui .text:focus, form.aui .textarea:focus, form.aui .upfile:focus
@@ -264,11 +294,11 @@ regexp(".*.atlassian.net/secure.*") {
         background-color: #111;
         color: #ccc;
     }
-    
+
     form.aui .field-group div.checkbox label, form.aui .field-group div.radio label, form.aui fieldset.group div.checkbox label, form.aui fieldset.group div.radio label {
         color: #8ec4fd;
     }
-    
+
     .adg3 .ghx-issue-compact.ghx-flagged, .adg3 .ghx-issue.ghx-flagged {
         background-color: #2d2c1e;
     }
