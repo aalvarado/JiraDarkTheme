@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         Jira Dark Gray
 @namespace    github.com/aalvarado
-@version      1.2.0
+@version      1.3.0
 @license      BSD
 @preprocessor default
 
@@ -60,6 +60,7 @@ regexp(".*.atlassian.net/secure.*") {
     .adg3 .js-issue.ghx-selected .ghx-items-container {
         background-color: #333;
     }
+
     .adg3 .js-issue.ghx-selected,
     .adg3 .js-issue.ghx-selected .ghx-items-container {
         background-color: #1c2c37;
@@ -69,6 +70,7 @@ regexp(".*.atlassian.net/secure.*") {
     .adg3 .ghx-issue:hover {
         background-color: #444;
     }
+
     .ghx-swimlane-header::after {
         background: none;
         box-shadow: none;
@@ -99,7 +101,6 @@ regexp(".*.atlassian.net/secure.*") {
         background-color: #222;
     }
 
-
     /***
      * Left-hand Nav
     ***/
@@ -128,6 +129,7 @@ regexp(".*.atlassian.net/secure.*") {
     [data-test-id="software-board.board-area"] section span {
         color: #ccc;
     }
+
     section div[data-test-id="platform-board-kit.common.ui.column-header.header.column-header-container"] div {
         background-color: #222;
     }
@@ -209,9 +211,13 @@ regexp(".*.atlassian.net/secure.*") {
     }
 
     [data-test-id="issue.activity.comment"] input,
-    #create-issue-dialog .jira-dialog-heading, #edit-issue-dialog .jira-dialog-heading,
+    #create-issue-dialog .jira-dialog-heading,
+    #edit-issue-dialog .jira-dialog-heading,
     .jira-dialog .jira-dialog-content,
-    #create-issue-dialog .form-body, #create-issue-dialog .form-footer, #edit-issue-dialog .form-body, #edit-issue-dialog .form-footer,
+    #create-issue-dialog .form-body,
+    #create-issue-dialog .form-footer,
+    #edit-issue-dialog .form-body,
+    #edit-issue-dialog .form-footer,
     .ghx-backlog-container
     {
         background-color: #222;
@@ -253,14 +259,17 @@ regexp(".*.atlassian.net/secure.*") {
         padding: 10px;
         box-shadow: -3px 3px 1px #00000850;
     }
+
     .jira-dialog-heading {
         width: auto;
     }
+
     .jira-dialog-content {
         border-top: 10px solid #333;
     }
 
-    .adg3 .js-issue.ghx-issue-compact:hover, .adg3 .js-issue.ghx-issue-compact:hover .ghx-items-container {
+    .adg3 .js-issue.ghx-issue-compact:hover,
+    .adg3 .js-issue.ghx-issue-compact:hover .ghx-items-container {
         background-color: #444;
     }
 
@@ -271,46 +280,71 @@ regexp(".*.atlassian.net/secure.*") {
     .ghx-view-section > button {  /* "..." board menu */
         background-color: #444;
     }
+
     #ghx-quick-filters > ul > li > button:hover,
     .complete-sprint-container > button:hover,
     .ghx-view-section > button:hover {
         background-color: #555;
     }
+
     #ghx-quick-filters > ul > li > button span,
     #ghx-quick-filters > ul > li > button,
     .complete-sprint-container > button,
     .ghx-view-section > button span {
         color: #8ec4fd !important;
     }
+
     #ghx-quick-filters > ul:first-child > li:first-child {
         padding-right: 0;
     }
+
     #ghx-quick-filters > ul:first-child > li:last-child {
         margin-top: 0 !important;
     }
+
     #ghx-quick-filters > ul:first-child > li:last-child::before{
         content: unset;
     }
+
     #ghx-quick-filters > ul > li button {
         padding: 0 10px;
     }
 
     form.aui input[type="text"],
-    form.aui .multi-select, form.aui .password, form.aui .select, form.aui .text, form.aui .textarea, form.aui .upfile
+    form.aui .multi-select,
+    form.aui .password,
+    form.aui .select,
+    form.aui .text,
+    form.aui .textarea,
+    form.aui .upfile
+
     {
         background-color: #171717;
         color: #ccc;
     }
 
     form.aui input[type="text"]:hover,
-    form.aui .multi-select:hover, form.aui .password:hover, form.aui .select:hover, form.aui .text:hover, form.aui .textarea:hover, form.aui .upfile:hover,
-    form.aui .multi-select:focus, form.aui .password:focus, form.aui .select:focus, form.aui .text:focus, form.aui .textarea:focus, form.aui .upfile:focus
+    form.aui .multi-select:hover,
+    form.aui .password:hover,
+    form.aui .select:hover,
+    form.aui .text:hover,
+    form.aui .textarea:hover,
+    form.aui .upfile:hover,
+    form.aui .multi-select:focus,
+    form.aui .password:focus,
+    form.aui .select:focus,
+    form.aui .text:focus,
+    form.aui .textarea:focus,
+    form.aui .upfile:focus
     {
         background-color: #111;
         color: #ccc;
     }
 
-    form.aui .field-group div.checkbox label, form.aui .field-group div.radio label, form.aui fieldset.group div.checkbox label, form.aui fieldset.group div.radio label {
+    form.aui .field-group div.checkbox label,
+    form.aui .field-group div.radio label,
+    form.aui fieldset.group div.checkbox label,
+    form.aui fieldset.group div.radio label {
         color: #8ec4fd;
     }
 
@@ -318,22 +352,23 @@ regexp(".*.atlassian.net/secure.*") {
         background-color: #2d2c1e;
     }
     
-    
     /* Issue - right hand column */
     #jira-issue-header-actions {
         background: transparent;
     }
+
     div[data-test-id="issue.views.issue-base.context.status-and-approvals-wrapper.status-and-approval"] div[data-test-id="issue.views.issue-base.foundation.status.status-field-wrapper"] button {
         background-color: #333 !important;
     }
+
     div[data-test-id="issue.views.issue-base.context.status-and-approvals-wrapper.status-and-approval"] div[data-test-id="issue.views.issue-base.foundation.status.status-field-wrapper"] button span {
         color: #8ec4fd;;
     }
+
     div[data-test-id="issue.views.issue-base.context.status-and-approvals-wrapper.status-and-approval"] div[data-test-id="issue.views.issue-base.foundation.status.status-field-wrapper"] button:hover {
         background-color: #444 !important;
     }
 
-    
     /* Linked Issues */
     div[data-test-id="issue.views.issue-details.issue-layout.left-most-column"] div > ul {
         background-color: #222;
@@ -342,7 +377,7 @@ regexp(".*.atlassian.net/secure.*") {
         background-color: #333;
         border-radius: 3px;
     }
-    
+
     /*** Activity ***/
     /* Nav buttons (show) */
     div[data-test-id="issue.views.issue-details.issue-layout.left-most-column"] > div > div > div > button {
@@ -364,7 +399,4 @@ regexp(".*.atlassian.net/secure.*") {
         padding: 10px 5px;
         border-radius: 3px;
     }
-    
-    
-    
 }
