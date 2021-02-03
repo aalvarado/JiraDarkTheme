@@ -273,7 +273,6 @@ regexp(".*.atlassian.net/secure.*") {
         background-color: #444;
     }
 
-
     /* "Active Sprints" header row buttons */
     #ghx-quick-filters > ul > li > button, /* quick filters main toggle */
     .complete-sprint-container > button, /* "complete sprint" btn */
@@ -302,7 +301,7 @@ regexp(".*.atlassian.net/secure.*") {
         margin-top: 0 !important;
     }
 
-    #ghx-quick-filters > ul:first-child > li:last-child::before{
+    #ghx-quick-filters > ul:first-child > li:last-child::before {
         content: unset;
     }
 
@@ -316,9 +315,7 @@ regexp(".*.atlassian.net/secure.*") {
     form.aui .select,
     form.aui .text,
     form.aui .textarea,
-    form.aui .upfile
-
-    {
+    form.aui .upfile {
         background-color: #171717;
         color: #ccc;
     }
@@ -335,8 +332,7 @@ regexp(".*.atlassian.net/secure.*") {
     form.aui .select:focus,
     form.aui .text:focus,
     form.aui .textarea:focus,
-    form.aui .upfile:focus
-    {
+    form.aui .upfile:focus {
         background-color: #111;
         color: #ccc;
     }
@@ -373,6 +369,7 @@ regexp(".*.atlassian.net/secure.*") {
     div[data-test-id="issue.views.issue-details.issue-layout.left-most-column"] div > ul {
         background-color: #222;
     }
+
     div[data-test-id="issue.views.issue-details.issue-layout.left-most-column"] div > ul > div {
         background-color: #333;
         border-radius: 3px;
@@ -383,15 +380,17 @@ regexp(".*.atlassian.net/secure.*") {
     div[data-test-id="issue.views.issue-details.issue-layout.left-most-column"] > div > div > div > button {
         background-color: #333;
         border-radius: 3px 3px 0 0;
-
     }
+
     /* button:hover */
     div[data-test-id="issue.views.issue-details.issue-layout.left-most-column"] > div > div > div > button.css-jhagr1 {
         background-color: #555;
     }
+
     div[data-test-id="issue.views.issue-details.issue-layout.left-most-column"] > div > div > div > button.css-jhagr1 span {
         color: #FFF;
     }
+
     /* Comments */
     div[data-test-id="issue.views.issue-details.issue-layout.left-most-column"] > span > span > div,
     div[data-test-id="issue.views.issue-details.issue-layout.left-most-column"] > span > span > div > div {
