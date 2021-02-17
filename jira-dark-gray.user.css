@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         Jira Dark Gray
 @namespace    github.com/aalvarado
-@version      1.3.0
+@version      1.3.1
 @license      BSD
 @preprocessor default
 
@@ -352,6 +352,10 @@ regexp(".*.atlassian.net/secure.*") {
     #jira-issue-header-actions {
         background: transparent;
     }
+    
+    [class^="ReadViewContentWrapper"] {
+        background-color: #1c1c1c;
+    }
 
     div[data-test-id="issue.views.issue-base.context.status-and-approvals-wrapper.status-and-approval"] div[data-test-id="issue.views.issue-base.foundation.status.status-field-wrapper"] button {
         background-color: #333 !important;
@@ -397,5 +401,17 @@ regexp(".*.atlassian.net/secure.*") {
         background-color: #333;
         padding: 10px 5px;
         border-radius: 3px;
+    }
+    
+    .ghx-zone-cell {
+        background-color: #222;
+    }
+    
+    .ghx-zone-row.ghx-target-hover .ghx-zone-cell {
+        background-color: #111;
+    }
+    
+    [data-testid^="inline-card"] {
+        background-color: #111;
     }
 }
