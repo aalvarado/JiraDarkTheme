@@ -10,8 +10,3 @@ Jira Dark Theme Userstyle
 # Preview
 
 ![Preview of Jira Dark Gray](./jira-darks-preview.png)
-
-# Alternatives
-- https://userstyles.org/styles/179379/jira-dark-2020
-  - (It's really good but uses css filters to invert colors and makes my fans spin like crazy :()
-  - It's hosted at userstyles.org
