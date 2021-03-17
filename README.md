@@ -10,3 +10,5 @@ Jira Dark Theme Userstyle
 # Preview
 
 ![Preview of Jira Dark Gray](./jira-darks-preview.png)
+
+Thank you for the ⭐s
