@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         Jira Dark Gray
 @namespace    github.com/aalvarado
-@version      1.4.0
+@version      1.5.0
 @license      BSD
 @preprocessor default
 
@@ -87,6 +87,11 @@ regexp(".*.atlassian.net/secure.*") {
         background: none;
     }
 
+    [data-test-id="issue.views.issue-base.context.context-items.primary-items"] button {
+        background-color: #333 !important;
+    }
+    
+    
     /* Main area */
     [data-test-id="software-board.board"],
     .aui-page-panel,
@@ -368,7 +373,7 @@ regexp(".*.atlassian.net/secure.*") {
     }
 
     div[data-test-id="issue.views.issue-base.context.status-and-approvals-wrapper.status-and-approval"] div[data-test-id="issue.views.issue-base.foundation.status.status-field-wrapper"] button span {
-        color: #8ec4fd;;
+        color: #8ec4fd;
     }
 
     div[data-test-id="issue.views.issue-base.context.status-and-approvals-wrapper.status-and-approval"] div[data-test-id="issue.views.issue-base.foundation.status.status-field-wrapper"] button:hover {
@@ -435,15 +440,60 @@ regexp(".*.atlassian.net/secure.*") {
     }
     
     .virtual-table-row:hover,
-    .virtual-table-row:hover button{
+    .virtual-table-row:hover {
         background-color: #222 !important;
     }
     
     button {
         background-color: #222 !important;
+        
     }
     
     form.aui input[type="text"]:focus {
         background-color: #111;
     }
+    
+    .css-1pjvlzd-menu {
+        background-color: #333;
+    }
+    
+    .css-ouvcov-option, .css-ouvcov-option:hover {
+        background-color: #666;
+    }
+    
+    /* Main search dropdown */
+    
+    [data-test-id='search-dialog-dialog-wrapper']{
+        background-color: #222;
+    }
+    
+    [data-test-id='search-dialog-advanced-search-link']{
+        background-color: #333;
+    }
+    
+    [data-test-id='search-dialog-dialog-wrapper'] a:hover {
+        background-color: #333;
+    }
+    [data-test-id='search-dialog-dialog-wrapper'] label,
+    [data-test-id='search-dialog-dialog-wrapper'] span {
+        color: #8ec4fd !important;
+    }
+    
+    /* 
+       Many classes with font color scattered 
+       throught the search options :/ 
+    */
+    .css-lvvrvua, 
+    .css-1ol1n65, 
+    .css-1vvrvua, 
+    .css-1gs3kbj {
+        color: #8ec4fd !important;
+    }
+    
+    .ghx-sprint-meta .time {
+        background-color: #222;
+        padding: 2px 10px;
+        border-radius: 2px;
+        color: #8ec4fd !important;
+    } 
 }
