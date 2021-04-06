@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         Jira Dark Gray
 @namespace    github.com/aalvarado
-@version      1.5.0
+@version      1.6.0
 @license      BSD
 @preprocessor default
 
@@ -495,5 +495,73 @@ regexp(".*.atlassian.net/secure.*") {
         padding: 2px 10px;
         border-radius: 2px;
         color: #8ec4fd !important;
-    } 
+    }
+    
+    /* pills */
+    
+    .ictwIf, .bUBHcu {
+        background-color: #111;
+    }
+    
+    /* "Your work" tab */
+    
+    .dnTWtq {
+        background-color: #333;
+    }
+    
+    /* dropdowns */
+    .eKyyuE {
+        color: #8ec4fd;
+    }
+    .css-13623lg {
+        background-color: #333 !important;
+    }
+    
+    .vYgnQ {
+        
+        color: #8ec4fd;
+    }
+    
+    .ekNyYA:hover {
+        background-color: #333;
+    }
+    
+    [data-role="droplistContent"] {
+        background-color: #222;
+    }
+    
+    /* pop up from dropdowns */
+    .eJTYOk.eJTYOk {
+        background-color: #222 !important;
+        border-color: #222 !important;
+    }
+    
+    [data-test-id="global-pages.home.ui.home"] a,
+    [data-test-id="global-pages.home.ui.home"] a *{
+        color: #8ec4fd !important;
+    }
+    
+    [data-test-id="global-pages.home.ui.home"] section {
+        background-color: #444;
+    }
+    
+    /* project cards */
+    [data-test-id="global-pages.home.ui.home"] section section > div{
+        background-color: #222;
+        border-color: #292929;
+    }
+    
+    /* issues view */
+    .fbqYhg {
+        background-color: #222;
+    }
+    
+    /* search */
+    .hIWHrB {
+        background-color: #222;
+    }
+    
+    .hIWHrB:focus {
+        background-color: #1c1c1c;
+    }
 }
