@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         Jira Dark Gray
 @namespace    github.com/aalvarado
-@version      1.6.0
+@version      1.7.0
 @license      BSD
 @preprocessor default
 
@@ -107,11 +107,21 @@ regexp(".*.atlassian.net/secure.*") {
     .adg3 .ghx-columns .ghx-column {
         background-color: #222;
     }
+    
+    /* sub tasks */
+    
+    .adg3 .ghx-column .ghx-parent-group {
+        background-color: #555;
+    }
 
     /***
      * Left-hand Nav
     ***/
     /* remove top white border */
+    .css-1u84ut1, .css-77arw9::after {
+        background: #222;
+    }
+    
     .css-ac0tta::before, .css-77arw9::before {
         background: #333 !important;
     }
@@ -202,6 +212,16 @@ regexp(".*.atlassian.net/secure.*") {
 
     .hKALUX {
         background-color: transparent;
+    }
+    
+    .css-ojvx30 {
+        padding: 10px;
+    }
+    
+    .css-821jbb a {
+        padding: 5px 8px;
+        border-radius: 5px;
+        color: #8ec4fd !important;
     }
 
     /* comment editor */
@@ -563,5 +583,97 @@ regexp(".*.atlassian.net/secure.*") {
     
     .hIWHrB:focus {
         background-color: #1c1c1c;
+    }
+    
+    /* welcome right panel */
+    
+    .uwCBB {
+        background-color: #222;
+        
+    }
+    
+    .uwCBB * {
+        color: #8ec4fd !important;
+    }
+    
+    .bBnubg {
+        background-color: #333;
+    }
+    
+    .dqYoil {
+        background-color: #333;
+        color: #8ec4fd !important;
+    }
+    
+    
+    [data-ds--page-layout--slot="right-sidebar"] {
+        background-color: #222;
+    }
+   
+}
+
+@-moz-document regexp(".*.atlassian.net/projects.*"){
+    body, 
+    nav,
+    [role="banner"],
+    .aui-page-panel
+    {
+        background-color: #333 !important;
+        color: #ccc !important;
+    }
+    
+    h1,h2,h3,h4,h5,h6 {
+        color: #ddd;
+    }
+    
+    .aui-page-header, .aui-page-panel, .aui-page-panel-nav {
+        background-color: #333;
+    }
+    
+    [role='group'] a, 
+    .css-b6ncbb,
+    [role='group'] button
+    {
+        color: #8ec4fd !important;
+        background-color: #444;
+        margin-top: 5px;
+    }
+    
+
+    
+    .css-b6ncbb:hover,
+    button:hover{
+        background-color: #555 !important;
+     
+    }
+    
+    
+    .css-b6ncbb * {
+        color: #8ec4fd !important;
+    }
+    .css-ojvx30 {
+        background-color: #333;
+    }
+    
+    [role='group'] a:hover {
+        background-color: #555;
+    }
+    
+    [data-enter-from="right"] [draggable] {
+        background-color: #444;
+        margin-top: 5px;
+    }
+    
+    [data-enter-from="right"] [draggable]:hover {
+        background-color: #555;
+        cursor: pointer;
+    }
+    
+    a > *, span {
+        color: #8ec4fd !important;
+    }
+    
+    .css-1764c62::after {
+        background: none;
     }
 }
