@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         Jira Dark Gray
 @namespace    github.com/aalvarado
-@version      1.7.0
+@version      1.8.0
 @license      BSD
 @preprocessor default
 
@@ -112,6 +112,11 @@ regexp(".*.atlassian.net/secure.*") {
     
     .adg3 .ghx-column .ghx-parent-group {
         background-color: #555;
+    }
+    
+    /* subtask parent task label */
+    .adg3 .ghx-key {
+        color: #ddd;
     }
 
     /***
@@ -638,8 +643,6 @@ regexp(".*.atlassian.net/secure.*") {
         background-color: #444;
         margin-top: 5px;
     }
-    
-
     
     .css-b6ncbb:hover,
     button:hover{
