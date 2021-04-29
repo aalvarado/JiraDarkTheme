@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         Jira Dark Gray
 @namespace    github.com/aalvarado
-@version      1.8.0
+@version      1.9.0
 @license      BSD
 @preprocessor default
 
@@ -17,9 +17,47 @@ regexp(".*.atlassian.net/secure.*") {
 
     header a span, 
     .dqyfbQ ,
-    .css-pjv25p{
+    .css-pjv25p,
+    .jRBaLt{
         color: #8ec4fd;
     }
+    
+    .aZwtJ {
+        box-shadow: none;
+        margin: 0px;
+    }
+    
+    .iuihaW {
+        margin: 0px;
+    }
+    
+    /* issue change droddown */
+    .jRBaLt:hover {
+        color: #bdddff;
+    }
+    
+    /* gh branches */
+    [data-test-id="issue.views.issue-base.context.context-items"] a[tabindex] div {
+        color: #8ec4fd;
+    }
+    
+    /* issue fields for react dropdowns */
+    [class^='FieldBaseWrapper'] [tabindex]{
+        background-color: #333 !important;
+        border-color: transparent !important;
+    }
+    
+    [class^='FieldBaseWrapper'] [tabindex]:hover {
+        background-color: #444 !important;
+    }
+    [class^='FieldBaseWrapper'] div {
+        background-color: #333 !important;
+    }
+    
+    [class^='FieldBaseWrapper'] [tabindex] span + span{
+        color: #8ec4fd;
+    }
+
 
     /* translucent background when story is open in modal */
     .igoDWs {
