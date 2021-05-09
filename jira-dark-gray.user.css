@@ -7,8 +7,12 @@
 
 ==/UserStyle== */
 @-moz-document regexp(".*.atlassian.net/jira.*"),
+regexp("https://jira.*?/jira.*"),
 regexp(".*.atlassian.net/browse.*"),
-regexp(".*.atlassian.net/secure.*") {
+regexp("https://jira.*?/browse.*"),
+regexp(".*.atlassian.net/secure.*"),
+regexp("https://jira.*?/secure.*")
+ {
     header[role="banner"],
     [data-testid="Content"],
     html, body{
