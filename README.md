@@ -18,3 +18,6 @@ I consider night mode a fundamental feature that should be provided because it r
 ![Preview of Jira Dark Gray](./jira-darks-preview.png)
 
 Thank you for the ⭐s
+
+
+I wrote a style for Circle Ci Dashboard too: https://github.com/aalvarado/dark-circleci-dashboard
