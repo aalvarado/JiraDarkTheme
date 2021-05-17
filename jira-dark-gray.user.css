@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         Jira Dark Gray
 @namespace    github.com/aalvarado
-@version      1.9.0
+@version      1.10.0
 @license      BSD
 @preprocessor default
 
@@ -51,6 +51,7 @@ regexp(".*.atlassian.net/secure.*") {
         background-color: #444 !important;
     }
     [class^='FieldBaseWrapper'] div {
+        color: #ccc;
         background-color: #333 !important;
     }
     
@@ -277,6 +278,10 @@ regexp(".*.atlassian.net/secure.*") {
     [data-test-id="issue.activity.comment"],
     .akEditor {
         background-color: #333;
+    }
+    
+    .fZTloP {
+        color: #ccc;
     }
 
     [data-test-id="issue.activity.comment"],
