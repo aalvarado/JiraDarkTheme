@@ -3,7 +3,6 @@ This repo has been archived, there are other alternatives that offer a better ex
 
 https://github.com/aalvarado/JiraDarkTheme/issues/30
 
-
 # Jira Dark Theme
 Jira Dark Theme Userstyle
 
