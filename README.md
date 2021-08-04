@@ -1,8 +1,3 @@
-# Archived
-This repo has been archived, there are other alternatives that offer a better experience. Please try one of them.
-
-https://github.com/aalvarado/JiraDarkTheme/issues/30
-
 # Jira Dark Theme
 Jira Dark Theme Userstyle
 
