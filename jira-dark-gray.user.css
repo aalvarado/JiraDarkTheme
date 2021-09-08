@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         Jira Dark Gray
 @namespace    github.com/aalvarado
-@version      1.11.0
+@version      1.12.0
 @license      BSD
 @author       @aalvarado
 @preprocessor default
@@ -9,46 +9,46 @@
 ==/UserStyle== */
 @-moz-document regexp(".*.atlassian.net/jira.*"),
 regexp(".*.atlassian.net/browse.*"),
-regexp(".*.atlassian.net/secure.*")
-    {
+regexp(".*.atlassian.net/secure.*") {
     header[role="banner"],
     [data-testid="Content"],
-    html, body{
+    html,
+    body {
         background-color: #333 !important;
     }
 
-    header a span, 
-    .dqyfbQ ,
+    header a span,
+    .dqyfbQ,
     .css-pjv25p,
-    .jRBaLt{
+    .jRBaLt {
         color: #8ec4fd;
     }
-    
+
     .aZwtJ {
         box-shadow: none;
         margin: 0px;
     }
-    
+
     .iuihaW {
         margin: 0px;
     }
-    
+
     /* issue change droddown */
     .jRBaLt:hover {
         color: #bdddff;
     }
-    
+
     /* gh branches */
     [data-test-id="issue.views.issue-base.context.context-items"] a[tabindex] div {
         color: #8ec4fd;
     }
-    
+
     /* issue fields for react dropdowns */
-    [class^='FieldBaseWrapper'] [tabindex]{
+    [class^='FieldBaseWrapper'] [tabindex] {
         background-color: #333 !important;
         border-color: transparent !important;
     }
-    
+
     [class^='FieldBaseWrapper'] [tabindex]:hover {
         background-color: #444 !important;
     }
@@ -56,8 +56,8 @@ regexp(".*.atlassian.net/secure.*")
         color: #ccc;
         background-color: #333 !important;
     }
-    
-    [class^='FieldBaseWrapper'] [tabindex] span + span{
+
+    [class^='FieldBaseWrapper'] [tabindex] span + span {
         color: #8ec4fd;
     }
 
@@ -131,14 +131,13 @@ regexp(".*.atlassian.net/secure.*")
     [data-test-id="issue.views.issue-base.context.context-items.primary-items"] button {
         background-color: #333 !important;
     }
-    
-    
+
+
     /* Main area */
     [data-test-id="software-board.board"],
     .aui-page-panel,
     #ghx-pool,
-    [data-ds--page-layout--slot="main"]
-    {
+    [data-ds--page-layout--slot="main"] {
         background-color: #333;
         color: #ddd;
     }
@@ -148,13 +147,36 @@ regexp(".*.atlassian.net/secure.*")
     .adg3 .ghx-columns .ghx-column {
         background-color: #222;
     }
-    
+
+    .adg3 .ghx-columns {
+        margin-top: .4em;
+    }
+    .adg3 .ghx-columns .ghx-column {
+        padding-top: .1em;
+    }
+
+    /* Swimlane headers */
+    .ghx-swimlane-header {
+        background-color: #333 !important;
+        border: 1px solid #444;
+    }
+
+    .ghx-swimlane-header .ghx-expander {
+        left: 1em;
+    }
+
+    .ghx-swimlane-header .ghx-heading {
+        margin-left: 1.6em;
+    }
+    .ghx-heading span {
+        color: #bbb !important;
+    }
+
     /* sub tasks */
-    
     .adg3 .ghx-column .ghx-parent-group {
         background-color: #555;
     }
-    
+
     /* subtask parent task label */
     .adg3 .ghx-key {
         color: #ddd;
@@ -164,14 +186,16 @@ regexp(".*.atlassian.net/secure.*")
      * Left-hand Nav
     ***/
     /* remove top white border */
-    .css-1u84ut1, .css-77arw9::after {
+    .css-1u84ut1,
+    .css-77arw9::after {
         background: #222;
     }
-    
-    .css-ac0tta::before, .css-77arw9::before {
+
+    .css-ac0tta::before,
+    .css-77arw9::before {
         background: #333 !important;
     }
-    
+
     .css-cdxr6t {
         background-color: #444;
     }
@@ -203,8 +227,7 @@ regexp(".*.atlassian.net/secure.*")
 
     [role="dialog"],
     .ghx-issue-compact,
-    .ghx-issue-compact .ghx-end
-    {
+    .ghx-issue-compact .ghx-end {
         background-color: #333;
         color: #ccc;
     }
@@ -259,11 +282,11 @@ regexp(".*.atlassian.net/secure.*")
     .hKALUX {
         background-color: transparent;
     }
-    
+
     .css-ojvx30 {
         padding: 10px;
     }
-    
+
     .css-821jbb a {
         padding: 5px 8px;
         border-radius: 5px;
@@ -281,7 +304,7 @@ regexp(".*.atlassian.net/secure.*")
     .akEditor {
         background-color: #333;
     }
-    
+
     .fZTloP {
         color: #ccc;
     }
@@ -299,8 +322,7 @@ regexp(".*.atlassian.net/secure.*")
     #create-issue-dialog .form-footer,
     #edit-issue-dialog .form-body,
     #edit-issue-dialog .form-footer,
-    .ghx-backlog-container
-    {
+    .ghx-backlog-container {
         background-color: #222;
         color: #ccc;
     }
@@ -355,9 +377,12 @@ regexp(".*.atlassian.net/secure.*")
     }
 
     /* "Active Sprints" header row buttons */
-    #ghx-quick-filters > ul > li > button, /* quick filters main toggle */
-    .complete-sprint-container > button, /* "complete sprint" btn */
-    .ghx-view-section > button {  /* "..." board menu */
+    #ghx-quick-filters > ul > li > button,
+    /* quick filters main toggle */
+    .complete-sprint-container > button,
+    /* "complete sprint" btn */
+    .ghx-view-section > button {
+        /* "..." board menu */
         background-color: #444;
     }
 
@@ -425,15 +450,16 @@ regexp(".*.atlassian.net/secure.*")
         color: #8ec4fd;
     }
 
-    .adg3 .ghx-issue-compact.ghx-flagged, .adg3 .ghx-issue.ghx-flagged {
+    .adg3 .ghx-issue-compact.ghx-flagged,
+    .adg3 .ghx-issue.ghx-flagged {
         background-color: #2d2c1e;
     }
-    
+
     /* Issue - right hand column */
     #jira-issue-header-actions {
         background: transparent;
     }
-    
+
     [class^="ReadViewContentWrapper"] {
         background-color: #1c1c1c;
     }
@@ -483,64 +509,63 @@ regexp(".*.atlassian.net/secure.*")
         padding: 10px 5px;
         border-radius: 3px;
     }
-    
+
     .ghx-zone-cell {
         background-color: #222;
     }
-    
+
     .ghx-zone-row.ghx-target-hover .ghx-zone-cell {
         background-color: #111;
     }
-    
+
     [data-testid^="inline-card"] {
         background-color: #111;
     }
-    
+
     .hlcLVe {
         background-color: #222;
     }
-    
-    [data-test-id="common.components.virtual-table.table.content.scrollbars.vertical.virtual-table-scrollbar-wrapper"] [role="presentation"], 
+
+    [data-test-id="common.components.virtual-table.table.content.scrollbars.vertical.virtual-table-scrollbar-wrapper"] [role="presentation"],
     [data-test-id="common.components.virtual-table.table.content.scrollbars.vertical.virtual-table-scrollbar-wrapper"] [role="presentation"] {
         background-color: #333 !important;
     }
-    
+
     .sc-gvDkQG.ktIPzl {
         background: transparent !important;
     }
-    
+
     .virtual-table-row:hover,
     .virtual-table-row:hover {
         background-color: #222 !important;
     }
-    
+
     button {
         background-color: #222 !important;
-        
     }
-    
+
     form.aui input[type="text"]:focus {
         background-color: #111;
     }
-    
+
     .css-1pjvlzd-menu {
         background-color: #333;
     }
-    
-    .css-ouvcov-option, .css-ouvcov-option:hover {
+
+    .css-ouvcov-option,
+    .css-ouvcov-option:hover {
         background-color: #666;
     }
-    
+
     /* Main search dropdown */
-    
-    [data-test-id='search-dialog-dialog-wrapper']{
+    [data-test-id='search-dialog-dialog-wrapper'] {
         background-color: #222;
     }
-    
-    [data-test-id='search-dialog-advanced-search-link']{
+
+    [data-test-id='search-dialog-advanced-search-link'] {
         background-color: #333;
     }
-    
+
     [data-test-id='search-dialog-dialog-wrapper'] a:hover {
         background-color: #333;
     }
@@ -548,37 +573,36 @@ regexp(".*.atlassian.net/secure.*")
     [data-test-id='search-dialog-dialog-wrapper'] span {
         color: #8ec4fd !important;
     }
-    
+
     /* 
        Many classes with font color scattered 
        throught the search options :/ 
     */
-    .css-lvvrvua, 
-    .css-1ol1n65, 
-    .css-1vvrvua, 
+    .css-lvvrvua,
+    .css-1ol1n65,
+    .css-1vvrvua,
     .css-1gs3kbj {
         color: #8ec4fd !important;
     }
-    
+
     .ghx-sprint-meta .time {
         background-color: #222;
         padding: 2px 10px;
         border-radius: 2px;
         color: #8ec4fd !important;
     }
-    
+
     /* pills */
-    
-    .ictwIf, .bUBHcu {
+    .ictwIf,
+    .bUBHcu {
         background-color: #111;
     }
-    
+
     /* "Your work" tab */
-    
     .dnTWtq {
         background-color: #333;
     }
-    
+
     /* dropdowns */
     .eKyyuE {
         color: #8ec4fd;
@@ -586,141 +610,143 @@ regexp(".*.atlassian.net/secure.*")
     .css-13623lg {
         background-color: #333 !important;
     }
-    
+
     .vYgnQ {
-        
+
         color: #8ec4fd;
     }
-    
+
     .ekNyYA:hover {
         background-color: #333;
     }
-    
+
     [data-role="droplistContent"] {
         background-color: #222;
     }
-    
+
     /* pop up from dropdowns */
     .eJTYOk.eJTYOk {
         background-color: #222 !important;
         border-color: #222 !important;
     }
-    
+
     [data-test-id="global-pages.home.ui.home"] a,
-    [data-test-id="global-pages.home.ui.home"] a *{
+    [data-test-id="global-pages.home.ui.home"] a * {
         color: #8ec4fd !important;
     }
-    
+
     [data-test-id="global-pages.home.ui.home"] section {
         background-color: #444;
     }
-    
+
     /* project cards */
-    [data-test-id="global-pages.home.ui.home"] section section > div{
+    [data-test-id="global-pages.home.ui.home"] section section > div {
         background-color: #222;
         border-color: #292929;
     }
-    
+
     /* issues view */
     .fbqYhg {
         background-color: #222;
     }
-    
+
     /* search */
     .hIWHrB {
         background-color: #222;
     }
-    
+
     .hIWHrB:focus {
         background-color: #1c1c1c;
     }
-    
+
     /* welcome right panel */
-    
     .uwCBB {
         background-color: #222;
-        
     }
-    
+
     .uwCBB * {
         color: #8ec4fd !important;
     }
-    
+
     .bBnubg {
         background-color: #333;
     }
-    
+
     .dqYoil {
         background-color: #333;
         color: #8ec4fd !important;
     }
-    
-    
+
+
     [data-ds--page-layout--slot="right-sidebar"] {
         background-color: #222;
     }
-   
 }
 
-@-moz-document regexp(".*.atlassian.net/projects.*"){
-    body, 
+@-moz-document regexp(".*.atlassian.net/projects.*") {
+    body,
     nav,
     [role="banner"],
-    .aui-page-panel
-    {
+    .aui-page-panel {
         background-color: #333 !important;
         color: #ccc !important;
     }
-    
-    h1,h2,h3,h4,h5,h6 {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         color: #ddd;
     }
-    
-    .aui-page-header, .aui-page-panel, .aui-page-panel-nav {
+
+    .aui-page-header,
+    .aui-page-panel,
+    .aui-page-panel-nav {
         background-color: #333;
     }
-    
-    [role='group'] a, 
+
+    [role='group'] a,
     .css-b6ncbb,
-    [role='group'] button
-    {
+    [role='group'] button {
         color: #8ec4fd !important;
         background-color: #444;
         margin-top: 5px;
     }
-    
+
     .css-b6ncbb:hover,
-    button:hover{
+    button:hover {
         background-color: #555 !important;
-     
     }
-    
-    
+
+
     .css-b6ncbb * {
         color: #8ec4fd !important;
     }
     .css-ojvx30 {
         background-color: #333;
     }
-    
+
     [role='group'] a:hover {
         background-color: #555;
     }
-    
+
     [data-enter-from="right"] [draggable] {
         background-color: #444;
         margin-top: 5px;
     }
-    
+
     [data-enter-from="right"] [draggable]:hover {
         background-color: #555;
         cursor: pointer;
     }
-    
-    a > *, span {
+
+    a > *,
+    span {
         color: #8ec4fd !important;
     }
-    
+
     .css-1764c62::after {
         background: none;
     }
@@ -728,33 +754,46 @@ regexp(".*.atlassian.net/secure.*")
 
 
 @-moz-document regexp(".*.atlassian.net/issues.*") {
-    html, body, .navigator-body, header[role="banner"] {
+    html,
+    body,
+    .navigator-body,
+    header[role="banner"] {
         background-color: #333 !important;
         color: #ccc !important;
     }
-    
+
     nav ::after {
         background: transparent !important;
     }
-    
+
     a > * {
         color: #8ec4fd !important;
     }
-    
-    nav , .css-194d9bm   {
+
+    nav,
+    .css-194d9bm {
         background-color: #333 !important;
         color: #ccc !important;
     }
     .css-1b03djw:hover {
         background-color: #222 !important;
     }
-    
-    nav a, nav a > *, nav button, nav button *, svg, svg path, svg g, svg * {
+
+    nav a,
+    nav a > *,
+    nav button,
+    nav button *,
+    svg,
+    svg path,
+    svg g,
+    svg * {
         color: #8ec4fd !important;
         fill: #8ec4fd !important;
     }
-    
-    nav button:hover, nav button:active, [aria-expanded="true"] {
+
+    nav button:hover,
+    nav button:active,
+    [aria-expanded="true"] {
         background-color: #222 !important;
     }
 }
