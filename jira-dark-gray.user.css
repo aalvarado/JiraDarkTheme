@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         Jira Dark Gray
 @namespace    github.com/aalvarado
-@version      1.12.0
+@version      1.12.1
 @license      BSD
 @author       @aalvarado
 @preprocessor default
@@ -680,6 +680,11 @@ regexp(".*.atlassian.net/secure.*") {
 
     [data-ds--page-layout--slot="right-sidebar"] {
         background-color: #222;
+    }
+    
+    .code {
+        background-color: #333 !important;
+        color: #ccc !important;
     }
 }
 
