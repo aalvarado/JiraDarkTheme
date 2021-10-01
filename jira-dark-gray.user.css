@@ -628,6 +628,12 @@ regexp(".*.atlassian.net/secure.*") {
     [data-role="droplistContent"] {
         background-color: #222;
     }
+    
+    /* Allows hover to be dark instead of white on all dropdowns */
+        [id^='react-select-']:hover {
+        background-color: #333 !important
+    }
+  
 
     /* pop up from dropdowns */
     .eJTYOk.eJTYOk {
