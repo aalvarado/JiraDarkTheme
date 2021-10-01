@@ -171,6 +171,11 @@ regexp(".*.atlassian.net/secure.*") {
     .ghx-heading span {
         color: #bbb !important;
     }
+    
+    /* Swimlane Inner */
+    .ReactVirtualized__Grid__innerScrollContainer {
+        background-color: #555 !important;
+    }
 
     /* sub tasks */
     .adg3 .ghx-column .ghx-parent-group {
