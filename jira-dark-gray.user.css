@@ -171,6 +171,11 @@ regexp(".*.atlassian.net/secure.*") {
     .ghx-heading span {
         color: #bbb !important;
     }
+    
+    /* Swimlane Inner */
+    .ReactVirtualized__Grid__innerScrollContainer {
+        background-color: #555 !important;
+    }
 
     /* sub tasks */
     .adg3 .ghx-column .ghx-parent-group {
@@ -623,6 +628,12 @@ regexp(".*.atlassian.net/secure.*") {
     [data-role="droplistContent"] {
         background-color: #222;
     }
+    
+    /* Allows hover to be dark instead of white on all dropdowns */
+        [id^='react-select-']:hover {
+        background-color: #333 !important
+    }
+  
 
     /* pop up from dropdowns */
     .eJTYOk.eJTYOk {
