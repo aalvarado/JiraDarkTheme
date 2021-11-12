@@ -697,6 +697,15 @@ regexp(".*.atlassian.net/secure.*") {
         background-color: #333 !important;
         color: #ccc !important;
     }
+
+/* Fixes z-index of the epic labels and action button */
+    .zd1ddu-13 {
+        z-index: 2;
+    }
+    
+    .o8lyvj-0 {
+        z-index: 2;
+    }
 }
 
 @-moz-document regexp(".*.atlassian.net/projects.*") {
