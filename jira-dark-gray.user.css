@@ -1,9 +1,9 @@
-/* ==UserStyle==
-@name         Jira Dark Gray
-@namespace    github.com/aalvarado
-@version      1.12.1
-@license      BSD
-@author       @aalvarado
+/* ==UserStyle==	
+@name         Jira Dark Gray	
+@namespace    github.com/aalvarado	
+@version      1.12.1	
+@license      BSD	
+@author       @aalvarado	
 @preprocessor default
 
 ==/UserStyle== */
@@ -17,12 +17,6 @@ regexp(".*.atlassian.net/secure.*") {
         background-color: #333 !important;
     }
 
-    header a span,
-    .dqyfbQ,
-    .css-pjv25p,
-    .jRBaLt {
-        color: #8ec4fd;
-    }
 
     .aZwtJ {
         box-shadow: none;
@@ -222,10 +216,6 @@ regexp(".*.atlassian.net/secure.*") {
         background-color: #222;
     }
 
-    [data-test-id="software-board.board-area"] section span {
-        color: #ccc;
-    }
-
     section div[data-test-id="platform-board-kit.common.ui.column-header.header.column-header-container"] div {
         background-color: #222;
     }
@@ -340,7 +330,7 @@ regexp(".*.atlassian.net/secure.*") {
     nav a div,
     nav button,
     nav button div {
-        background-color: #444 !important;
+        background-color: #333 !important;
     }
 
     nav a {
@@ -706,6 +696,124 @@ regexp(".*.atlassian.net/secure.*") {
     .o8lyvj-0 {
         z-index: 2;
     }
+    
+     [data-test-id="software-board.board-scroll"] section span {
+        color: #ccc !important;
+    }
+
+    section div[id="ReactVirtualized__Grid__innerScrollContainer"] div {
+        background-color: #222;
+    }
+    
+    .gnTJJk {
+        color: #ccc;
+    }
+    
+    .jDtDtm {
+        color: #8ec4fd;
+    }
+    
+    a {
+        color: #8ec4fd;
+    }
+    
+    a:hover {
+        color: #4ba1fb;
+    }
+    
+    .ReactVirtualized__Grid__innerScrollContainer {
+       background-color: #555 !important;
+   }
+   
+   [id^='react-select-']:hover {
+       background-color: #333 !important
+   }
+   
+   .cdELFE {
+       background-color: #202124;
+   }
+   
+   .iFVIyY {
+       background-color: #202124;
+   }
+   
+   .lnnurR {
+       background: #444;
+   }
+   
+   .cYQrJH {
+       color: #8ec4fd;
+   }
+
+   [aria-controls="HEADER-DROP-1"] {
+       background-color: #555;
+   }
+   
+   /* Fix the backlogs background and make text readable */
+   [data-test-id="software-backlog.card-list.card.card-contents.interaction-layer.accessible-card"] {
+       background-color: #666;
+   }
+   
+   a.cPExjy {
+       color: #8ec4fd !important;
+   }
+   
+   .dHCABi {
+       color: #fff;
+   }
+   
+   /* Fixes the Epic Left Rail in backlog */
+   
+   [data-test-id="software-backlog-panel.common.ui.panel.container"] {
+       background-color: #444;
+   }
+   
+   .cqHPyU {
+       color: #8ec4fd;
+   }
+   
+   .bAgqLe {
+       color: #8ec4fd;
+   }
+   
+   .css-1nnf97w {
+       color: #8ec4fd;
+   }
+   
+   .css-xua7vi {
+       color: #8ec4fd;
+   }
+   
+   .css-1gly9cj {
+       color: #8ec4fd;
+   }
+   
+    .css-1gly9cj:hover {
+       color: #fff;
+   }
+   
+    .css-1gly9cj:hover {
+       color: #fff;
+   }
+   
+   .css-1nnf97w [data-item-title] {
+       color: #fff;
+   }
+   
+   .css-1gly9cj {
+       color: #8ec4fd;
+   }
+   
+   .css-196lgr2 {
+       color: #8ec4fd;
+   }
+   
+    header a span,
+    .dqyfbQ,
+    .css-pjv25p,
+    .jRBaLt {
+        color: #8ec4fd;
+    }
 }
 
 @-moz-document regexp(".*.atlassian.net/projects.*") {
@@ -774,6 +882,10 @@ regexp(".*.atlassian.net/secure.*") {
 
     .css-1764c62::after {
         background: none;
+    }
+    
+    .eRIObY {
+        color: #000;
     }
 }
 
