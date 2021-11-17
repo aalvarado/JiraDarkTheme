@@ -817,6 +817,14 @@ regexp(".*.atlassian.net/secure.*") {
         color: #000;
     }
     
+    .ldGASN {
+        background: #444;
+    }
+    
+    span.css-19r5em7 {
+        color: #fff;
+    }
+    
 }
 
 @-moz-document regexp(".*.atlassian.net/projects.*") {
