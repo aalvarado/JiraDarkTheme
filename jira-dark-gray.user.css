@@ -1,7 +1,7 @@
 /* ==UserStyle==	
 @name         Jira Dark Gray
 @namespace    github.com/aalvarado
-@version      1.13.2
+@version      1.13.3
 @license      BSD
 @author       @aalvarado
 @preprocessor default
@@ -240,6 +240,15 @@ regexp(".*.atlassian.net/secure.*") {
     [role="presentation"] a {
         color: #8ec4fd;
     }
+    
+    a[href^="/issues/?jql=labels"] {
+        filter: invert();
+    }
+    
+    [data-test-id="issue.views.field.select.common.select-inline-edit.components"] [role="presentation"] a {
+        filter: invert();
+        
+    }
 
     [role="presentation"] p {
         color: #ccc;
@@ -464,6 +473,10 @@ regexp(".*.atlassian.net/secure.*") {
     #jira-issue-header-actions {
         background: transparent;
     }
+    
+    .iOYrOa:hover{
+        background-color: #333;
+    }
 
     [class^="ReadViewContentWrapper"] {
         background-color: #1c1c1c;
@@ -471,6 +484,24 @@ regexp(".*.atlassian.net/secure.*") {
 
     div[data-test-id="issue.views.issue-base.context.status-and-approvals-wrapper.status-and-approval"] div[data-test-id="issue.views.issue-base.foundation.status.status-field-wrapper"] button {
         background-color: #333 !important;
+    }
+    
+    
+    /* integrations */
+    .bxflKY:hover,
+    .tElYB:hover{
+        background-color: #333;
+    }
+    
+    /* Pinned Fields */
+    .iawEzm,
+    .UHdZE {
+        color: #8ec4fd;
+    }
+    
+    /* branch names */
+    .kYMxji .sc-12nc76b-13 {
+        color: #8ec4fd;
     }
 
     div[data-test-id="issue.views.issue-base.context.status-and-approvals-wrapper.status-and-approval"] div[data-test-id="issue.views.issue-base.foundation.status.status-field-wrapper"] button span {
