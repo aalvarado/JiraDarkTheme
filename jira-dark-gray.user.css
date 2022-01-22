@@ -1,7 +1,7 @@
 /* ==UserStyle==	
 @name         Jira Dark Gray
 @namespace    github.com/aalvarado
-@version      1.13.4
+@version      1.14.0
 @license      BSD
 @author       @aalvarado
 @preprocessor default
@@ -492,8 +492,17 @@ regexp(".*.atlassian.net/secure.*") {
     /* integrations */
     .jKClYf:hover,
     .bxflKY:hover,
-    .tElYB:hover{
+    .tElYB:hover {
         background-color: #333;
+    }
+    
+    /* spotlight */
+    
+    .fazorH
+    , .hLwMWC
+    {
+        background-color: #333;
+        border: 1px solid #666;
     }
     
     /* Pinned Fields */
@@ -621,6 +630,13 @@ regexp(".*.atlassian.net/secure.*") {
     .css-1ol1n65,
     .css-1vvrvua,
     .css-1gs3kbj {
+        color: #8ec4fd !important;
+    }
+    
+    /* @name reference */
+    .jezugp 
+    ,.css-mwicx5:not(:hover):not(:active) /* Profile link */
+    {
         color: #8ec4fd !important;
     }
 
