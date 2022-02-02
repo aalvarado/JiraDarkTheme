@@ -242,11 +242,11 @@ regexp(".*.atlassian.net/secure.*") {
     }
     
     a[href^="/issues/?jql=labels"] {
-        filter: invert();
+        filter: invert(1);
     }
     
     [data-test-id="issue.views.field.select.common.select-inline-edit.components"] [role="presentation"] a {
-        filter: invert();
+        filter: invert(1);
         
     }
 
