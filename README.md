@@ -17,6 +17,9 @@ I consider night mode a fundamental feature that should be provided because it r
 
 ![Preview of Jira Dark Gray](./jira-darks-preview.png)
 
+Issue view
+![image](https://user-images.githubusercontent.com/370322/161655135-127574d9-c0c1-466f-ba80-5c330673205e.png)
+
 Thank you for the ⭐s
 
 # Other styles
