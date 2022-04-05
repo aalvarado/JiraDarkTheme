@@ -1,7 +1,7 @@
 /* ==UserStyle==	
 @name         Jira Dark Gray
 @namespace    github.com/aalvarado
-@version      1.14.1
+@version      1.14.2
 @license      BSD
 @author       @aalvarado
 @preprocessor default
@@ -875,6 +875,34 @@ regexp(".*.atlassian.net/secure.*") {
         color: #fff;
     }
     
+    /* new issue */
+    
+/* Project dropdown 
+    Issue type dropdown
+*/
+    .css-1fz5jqa-control,
+    .css-bpp0bz-control,
+    .css-12aw7j7,
+    .css-1a7rm5r-control {
+        background-color: var(--ds-background-subtleNeutral-resting, #222);
+        border-color: var(--ds-border-neutral, #666);
+    }
+    
+    .css-bpp0bz-control:hover,
+    .css-12aw7j7:hover,
+    .css-1a7rm5r-control:hover {
+        background-color: var(--ds-background-default, #111);
+        border-color: var(--ds-border-neutral, #555);
+    }
+    
+    .css-56zytr-singleValue,
+    .css-18mjdzo{
+        color: #ccc;
+    }
+    
+    .css-18mjdzo:hover {
+        color: black;
+    }
 }
 
 @-moz-document regexp(".*.atlassian.net/projects.*") {
