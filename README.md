@@ -24,3 +24,7 @@ Thank you for the ⭐s
 
 # Other styles
 - **Circle Ci** Dashboard - https://github.com/aalvarado/dark-circleci-dashboard
+
+--
+
+*JiraDarkTheme is not associated in any manner with the Jira brand, nor this is an official project or have any relation other than this being a stylesheet for that software.*
