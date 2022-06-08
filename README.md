@@ -23,7 +23,7 @@ Issue view
 Thank you for the ⭐s
 
 # Other styles
-- **Circle Ci** Dashboard - https://github.com/aalvarado/dark-circleci-dashboard
+- **CircleCI** Dashboard - https://github.com/aalvarado/dark-circleci-dashboard
 
 --
 
