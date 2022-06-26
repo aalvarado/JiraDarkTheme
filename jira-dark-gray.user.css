@@ -1,7 +1,7 @@
 /* ==UserStyle==	
 @name         Jira Dark Gray
 @namespace    github.com/aalvarado
-@version      1.14.2
+@version      1.14.3
 @license      BSD
 @author       @aalvarado
 @preprocessor default
@@ -605,6 +605,10 @@ regexp(".*.atlassian.net/secure.*") {
         background-color: #666;
     }
 
+  [data-test-id="search-dialog-input"] {
+    background-color: var(--ds-background-input,#222);
+  }
+  
     /* Main search dropdown */
     [data-test-id='search-dialog-dialog-wrapper'] {
         background-color: #222;
