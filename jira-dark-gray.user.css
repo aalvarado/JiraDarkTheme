@@ -19,10 +19,18 @@ regexp(".*.atlassian.net/secure.*") {
         --ds-background-neutral-subtle: #444;
         --ds-background-neutral-subtle-hovered: #555;
         --ds-background-input: #333;
+        --ds-background-input-hovered: #444;
         --ds-background-disabled: #444;
+        --ds-background-subtleNeutral-resting: #111;
+        --ds-background-brand-bold: #8ec4fd;
+        --ds-background-neutral-bold: #aaa;
+
+        --ds-background-information-bold: #8ec4fd;
+        --ds-background-success-bold: #b1deb4;
 
         --ds-surface: #333;
         --ds-surface-raised: #333;
+        --ds-surface-sunken: #222;
         --ds-surface-overlay: #444;
 
         --ds-border: #222;
@@ -30,13 +38,17 @@ regexp(".*.atlassian.net/secure.*") {
 
         --ds-shadow-raised: 0 1px 1px rgba(150, 150, 150, 0.25), 0 0 1px 1px rgba(150, 150, 150, 0.13);
 
-        --ds-text: #8ec4fd;
-        --ds-text-subtle: #d2d2d2;
+        --ds-text: #ddd;
+        --ds-text-subtlest: #aaa;
+        --ds-text-subtle: #bbb;
         --ds-text-disabled: #aaa;
+        --ds-text-mediumEmphasis: #fff;
         --ds-text-highEmphasis: #fff;
         --ds-text-selected: #9494ff;
+        --ds-text-inverse: #333;
+        --ds-text-accent-blue: #2d93ff;
+        --ds-text-link-resting: #429eff;
 
         --ds-link: #429eff;
-        --ds-text-link-resting: #429eff;
     }
 }
