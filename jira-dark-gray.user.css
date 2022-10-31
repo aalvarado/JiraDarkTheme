@@ -38,14 +38,17 @@ regexp(".*.atlassian.net/secure.*") {
 
         --ds-shadow-raised: 0 1px 1px rgba(150, 150, 150, 0.25), 0 0 1px 1px rgba(150, 150, 150, 0.13);
 
-        --ds-text: #8ec4fd;
-        --ds-text-subtle: #d2d2d2;
+        --ds-text: #ddd;
+        --ds-text-subtlest: #aaa;
+        --ds-text-subtle: #bbb;
         --ds-text-disabled: #aaa;
+        --ds-text-mediumEmphasis: #fff;
         --ds-text-highEmphasis: #fff;
         --ds-text-selected: #9494ff;
         --ds-text-inverse: #333;
+        --ds-text-accent-blue: #2d93ff;
+        --ds-text-link-resting: #429eff;
 
         --ds-link: #429eff;
-        --ds-text-link-resting: #429eff;
     }
 }
