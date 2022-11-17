@@ -20,6 +20,7 @@ regexp(".*.atlassian.net/secure.*") {
         --ds-background-neutral-subtle-hovered: #555;
         --ds-background-input: #333;
         --ds-background-input-hovered: #444;
+        --ds-background-input-pressed: #444;
         --ds-background-disabled: #444;
         --ds-background-subtleNeutral-resting: #111;
         --ds-background-brand-bold: #8ec4fd;
