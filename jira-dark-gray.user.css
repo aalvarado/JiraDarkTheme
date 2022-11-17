@@ -12,7 +12,7 @@ regexp(".*.atlassian.net/browse.*"),
 regexp(".*.atlassian.net/secure.*") {
     :root {
         --ds-background-default: #333;
-        --ds-background-neutral: #222;
+        --ds-background-neutral: rgba(255, 255, 255, .08);
         --ds-background-neutral-hovered: #333;
         --ds-background-selected: #353a44;
         --ds-background-selected-hovered: #484f5d;
@@ -20,10 +20,14 @@ regexp(".*.atlassian.net/secure.*") {
         --ds-background-neutral-subtle-hovered: #555;
         --ds-background-input: #333;
         --ds-background-input-hovered: #444;
+        --ds-background-input-pressed: #444;
         --ds-background-disabled: #444;
         --ds-background-subtleNeutral-resting: #111;
+        --ds-background-brand: #444;
         --ds-background-brand-bold: #8ec4fd;
         --ds-background-neutral-bold: #aaa;
+        --ds-background-information: #111;
+        --ds-background-discovery: #000;
 
         --ds-background-information-bold: #8ec4fd;
         --ds-background-success-bold: #b1deb4;
