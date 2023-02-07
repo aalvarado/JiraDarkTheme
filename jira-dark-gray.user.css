@@ -55,4 +55,33 @@ regexp(".*.atlassian.net/secure.*") {
 
         --ds-link: #429eff;
     }
+    
+    .ak-renderer-document [data-panel-type="info"] p,
+    .ak-renderer-document [data-panel-type="success"] p,
+    .ak-renderer-document [data-panel-type="note"] p,
+    .ak-renderer-document [data-panel-type="warning"] p {
+        color: #333 !important;
+    }
+    
+    .ak-renderer-document [data-panel-type="info"] ::marker,
+    .ak-renderer-document [data-panel-type="success"] ::marker,
+    .ak-renderer-document [data-panel-type="note"] ::marker,
+    .ak-renderer-document [data-panel-type="warning"] ::marker {
+        color: #333 !important;
+    }
+    
+    .ak-renderer-document [data-panel-type="info"] p .date-node,
+    .ak-renderer-document [data-panel-type="success"] p .date-node,
+    .ak-renderer-document [data-panel-type="note"] p .date-node,
+    .ak-renderer-document [data-panel-type="warning"] p .date-node {
+        color: #666 !important;
+    }
+    
+    .iQGMsK span {
+        color: #666 !important;
+    }
+    
+    [role="menu"] [role="menuitem"] {
+        background-color:#303030;
+    }
 }
